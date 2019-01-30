@@ -10,15 +10,6 @@ const userById = gql`
   }
 `;
 
-const userFragment = gql`
-  fragment UserFields on User {
-    username
-    email
-    age
-  }
-`;
-
 module.exports = {
-  userById,
-  userFragment
+  userById
 };
