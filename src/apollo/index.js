@@ -8,7 +8,5 @@ module.exports = new ApolloClient({
     uri: `http://localhost:3000/`,
     fetch,
   }),
-  cache: new InMemoryCache({
-    addTypename: false,
-  }),
+  cache: new InMemoryCache(),
 });
